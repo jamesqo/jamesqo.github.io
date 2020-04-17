@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+
+{% block title %}Welcome{% endblock %}
+{% block head %}
+    {{ super() }}
+    <link href="{{ url_for('static', filename='styles/home.css') }}" rel="stylesheet">
+{% endblock %}
+{% block content %}
+    <h1>I'm James! Nice to meet you.</h1>
+{% endblock %}
